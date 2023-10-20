@@ -38,7 +38,7 @@
                             <a class="nav-link" aria-current="page" href="#">Giới thiệu</a>
                         </li>
                         <li class="nav-item line">
-                            <a class="nav-link" href="#">Kinh nghiệm</a>
+                            <a class="nav-link kn" href="#">Kinh nghiệm</a>
                         </li>
                         <li class="nav-item line">
                             <a class="nav-link" href="#">Sản phẩm</a>
@@ -66,9 +66,71 @@
                 <a href="" class="btnhire btn btn-primary"> Hợp tác</a>
             </div>
 
+            <div class="scroll">
+            </div>
         </div>
     </div>
 
+    <div class="edu" id="khoiedu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 bigTitle text-center">
+                    <h1>Kinh nghiệm & Quá trình học</h1>
+                </div>
+                <div class="col-sm-4">
+                    <h2 class="secondTitle text-sm-end text-center"> Quá trình <span class="quaTrinh">học</span></h2>
+                    <div class="khoittnho text-sm-end text-center">
+                        <h3 class="thirdTitle ">Tiểu học</h3>
+                        <span class="motaqt">2007-2012 Lorem ipsum dolor temporibus!</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita sapiente dolor
+                            consectetur voluptates odit cum ipsum nemo quod dignissimos.</p>
+                    </div>
+                    <div class="khoittnho text-sm-end text-center">
+                        <h3 class="thirdTitle">Trung học</h3>
+                        <span class="motaqt">2012-2018 Lorem ipsum dolor temporibus!</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita sapiente dolor
+                            consectetur voluptates odit cum ipsum nemo quod dignissimos.</p>
+                    </div>
+                    <div class="khoittnho text-sm-end text-center">
+                        <h3 class="thirdTitle">Đại học</h3>
+                        <span class="motaqt">2018-2023 Lorem ipsum dolor temporibus!</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita sapiente dolor
+                            consectetur voluptates odit cum ipsum nemo quod dignissimos.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 cot2_3">
+                    <img src="./img/anh1.png" class="img-fluid" alt="anh1">
+                </div>
+
+                <div class="col-sm-4">
+                    <h2 class="secondTitle text-sm-start text-center"> Quá trình <span class="quaTrinh">làm việc</span>
+                    </h2>
+                    <div class="khoittnho text-sm-start text-center">
+                        <h3 class="thirdTitle ">#1</h3>
+                        <span class="motaqt">Lorem ipsum dolor sit Saepe,
+                            temporibus!</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita sapiente dolor
+                            consectetur voluptates odit cum ipsum nemo quod dignissimos.</p>
+                    </div>
+                    <div class="khoittnho text-sm-start text-center">
+                        <h3 class="thirdTitle">#2</h3>
+                        <span class="motaqt">Lorem ipsum dolor sit Saepe,
+                            temporibus!</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita sapiente dolor
+                            consectetur voluptates odit cum ipsum nemo quod dignissimos.</p>
+                    </div>
+                    <div class="khoittnho text-sm-start text-center">
+                        <h3 class="thirdTitle">#3</h3>
+                        <span class="motaqt">Lorem ipsum dolor sit Saepe,
+                            temporibus!</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita sapiente dolor
+                            consectetur voluptates odit cum ipsum nemo quod dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -77,6 +139,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <!-- main js  -->
+    <script>
+        $(function (){
+            $(".scroll, .kn").click(function (){
+                $('body,html').animate({ scrollTop:$('#khoiedu').offset().top},700)
+            })
+        })
+    </script>
+
 </body>
 
 </html>

@@ -5,9 +5,11 @@
     box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
     width: 100%;
     height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .line::after {
@@ -19,12 +21,13 @@ body, html{
     box-shadow: 0 0 10px 0 #e96443;
     transition: all 0.5s;
 }
+
 .line:hover::after {
     width: 100%;
 }
 
 /* menu top  */
- .navbar-nav .nav-link{
+.navbar-nav .nav-link {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-size: 13px;
@@ -33,33 +36,34 @@ body, html{
 }
 
 @media screen and (max-width:992px) {
-    .navbar-nav .nav-link{
+    .navbar-nav .nav-link {
         font-size: 12px;
         margin: 0;
     }
 }
 
 @media screen and (max-width:767.98px) {
-    
-    #cvNavBar .navbar-nav .nav-link{
+
+    #cvNavBar .navbar-nav .nav-link {
         color: white;
     }
 
     #cvNavBar .navbar-nav {
         background-color: rgba(0, 0, 0, 0.9);
-        
+
     }
 }
 
 /* thong tin 1  */
 
-.thongtin1{
+.thongtin1 {
     height: 100%;
     width: 100%;
     background: #e9585f;
     position: relative;
 }
-.thongtin1::before{
+
+.thongtin1::before {
     content: '';
     position: absolute;
     top: 0;
@@ -70,24 +74,28 @@ body, html{
     z-index: 1;
 
 }
-.tt{
+
+.tt {
     z-index: 2;
     position: relative;
     padding-top: 15%;
-    
+
 }
-.tt img{
+
+.tt img {
     border-radius: 50%;
     margin-bottom: 50px;
 
 }
-.tt h2{
+
+.tt h2 {
     font-size: 40px;
     text-transform: uppercase;
     color: white;
     margin-bottom: 22px;
 }
-.tt p{
+
+.tt p {
     color: black;
     font-size: 16px;
     line-height: 20px;
@@ -95,9 +103,89 @@ body, html{
     margin: auto;
     margin-bottom: 34px;
 }
-.tt .btnhire{
+
+.tt .btnhire {
     width: 180px;
     background: black;
     border: none;
     border-radius: 0;
+}
+
+/* edu  */
+.edu .bigTitle {
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+.edu .bigTitle h1{
+    display: inline;
+}
+
+ 
+.edu .secondTitle {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.edu .secondTitle span{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.khoittnho .thirdTitle{
+    font-size: 16px;
+    color: #e35855;
+    margin-bottom: 20px;
+}
+
+.khoittnho .motaqt{
+    font-size: 13px;
+    margin-bottom: 26px;
+    display: block;
+
+}
+
+.khoittnho  p{
+     font-size: 13px;
+     line-height: 21px;
+     color: black;
+}
+
+@media screen and (max-width:575.98px) {
+    .edu .secondTitle{
+        margin-top: 30px;
+    }
+}
+
+
+/* scroll  */
+.scroll{
+    width: 50px;
+    height: 80px;
+    border: 1px solid white;
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    border-radius: 40px;
+    margin-left: -25px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.scroll:hover{
+    bottom: 4%;
+}
+.scroll::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    background: white;
+    left: 50%;
+    bottom: 70%;
+    margin-left: -2px;
 }
